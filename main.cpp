@@ -9,7 +9,7 @@ int main() {
     std::ifstream fin(R"(C:\Users\Iluha\Documents\github_repos\graph_7\input.txt)");
 
     graph Graph;
-    Graph.fill(fin);
+    Graph.fill(fin); // is mistake
 
     int n = Graph.getCountV();
 

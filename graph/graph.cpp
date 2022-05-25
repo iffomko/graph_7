@@ -46,8 +46,8 @@ void graph::fill(std::ifstream &fin) {
 
             fin >> v1 >> v2;
 
-            this->Graph[v1][v2] = 1;
-            this->Graph[v2][v1] = 1;
+            this->Graph[v1 - 1][v2 - 1] = 1;
+            this->Graph[v2 - 1][v1 - 1] = 1;
         }
     }
 

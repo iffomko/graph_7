@@ -18,7 +18,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         used[i] = true;
 
-
+        
     }
 
     return 0;

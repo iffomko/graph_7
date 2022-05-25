@@ -5,7 +5,7 @@
 #include "graph/graph.h"
 
 int main() {
-    std::ifstream fin("\\input.txt");
+    std::ifstream fin(R"(C:\Users\Iluha\Documents\github_repos\graph_7\input.txt)");
 
     graph Graph;
     Graph.fill(fin);
@@ -16,7 +16,9 @@ int main() {
     bool* used = new bool[n]{};
 
     for (int i = 0; i < n; i++) {
-        
+        used[i] = true;
+
+
     }
 
     return 0;

@@ -4,7 +4,9 @@
 
 #include "bfs.h"
 
-void bfs(graph &Graph, queue &q, bool* used, int &count, const int &key, int current) {
+void bfs(graph &Graph, bool* used, int &count, const int &key, int current) {
+    queue q(Graph.getCountV());
+
     count = 0;
 
     if (current + 1 == key)

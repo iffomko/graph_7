@@ -12,4 +12,4 @@
 #include "../graph/graph.h"
 #include "../queue/queue.h"
 
-void bfs(graph &Graph, queue &q, bool* used, int &count, const int &key, int current);
+void bfs(graph &Graph, bool* used, int &count, const int &key, int current);

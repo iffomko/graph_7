@@ -13,15 +13,27 @@ int main() {
 
     int n = Graph.getCountV();
 
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++)
+            std::cout << Graph.getGraph()[i][j] << " ";
+
+        std::cout << std::endl;
+    }
+
     queue q(n);
     bool* used = new bool[n]{};
 
-    int key = 4, count;
+    int key, count;
+
+    std::cout << "Enter number of top: ";
+    std::cin >> key;
 
     for (int i = 0; i < n; i++) {
-        bfs(Graph, q, used, count, key, i);
-
+        bfs(Graph, used, count, key, i);
         std::cout << "From " << i + 1 << " to " << key << " length: " << count << std::endl;
+
+        for (int j = 0; j < n; j++)
+            used[j] = false;
     }
 
     return 0;

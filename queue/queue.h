@@ -6,6 +6,7 @@
 #ifndef GRAPH_7_QUEUE_H
 #define GRAPH_7_QUEUE_H
 
+#include <iostream>
 
 class queue {
     int *data;

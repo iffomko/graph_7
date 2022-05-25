@@ -3,4 +3,4 @@ project(graph_7)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(graph_7 main.cpp queue/queue.cpp queue/queue.h graph/graph.cpp graph/graph.h)
+add_executable(graph_7 main.cpp queue/queue.cpp queue/queue.h graph/graph.cpp graph/graph.h bfs/bfs.cpp bfs/bfs.h)

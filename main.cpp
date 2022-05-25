@@ -3,6 +3,7 @@
 
 #include "queue/queue.h"
 #include "graph/graph.h"
+#include "bfs/bfs.h"
 
 int main() {
     std::ifstream fin(R"(C:\Users\Iluha\Documents\github_repos\graph_7\input.txt)");
@@ -15,11 +16,7 @@ int main() {
     queue q(n);
     bool* used = new bool[n]{};
 
-    for (int i = 0; i < n; i++) {
-        used[i] = true;
-
-        
-    }
+    bfs(Graph, q, used);
 
     return 0;
 }

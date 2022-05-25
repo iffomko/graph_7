@@ -18,6 +18,9 @@ public:
 
     bool push(int item);
     int pop();
+
+    bool isEmpty() const;
+    bool isFull() const;
 };
 
 

@@ -44,3 +44,17 @@ int queue::pop() {
 
     return -1;
 }
+
+bool queue::isEmpty() const {
+    if (this->count == 0)
+        return true;
+
+    return false;
+}
+
+bool queue::isFull() const {
+    if (this->count == this->size)
+        return true;
+
+    return false;
+}

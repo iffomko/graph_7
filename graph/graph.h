@@ -17,10 +17,10 @@ public:
     explicit graph(int n);
     ~graph();
 
-    void  fill(std::ifstream &fin);
+    void fill(std::ifstream &fin);
 
-    int** &getGraph();
     int getCountV() const;
+    int** getGraph();
 };
 
 

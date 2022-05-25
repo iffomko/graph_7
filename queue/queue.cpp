@@ -58,3 +58,11 @@ bool queue::isFull() const {
 
     return false;
 }
+
+bool queue::isExist(int item) {
+    for (int i = 0; i < this->count; i++)
+        if (this->data[i] == item)
+            return true;
+
+    return false;
+}

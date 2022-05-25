@@ -21,6 +21,7 @@ public:
 
     bool isEmpty() const;
     bool isFull() const;
+    bool isExist(int item);
 };
 
 

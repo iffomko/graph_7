@@ -22,10 +22,6 @@ graph::~graph() {
     this->Graph = nullptr;
 }
 
-int** &graph::getGraph() {
-    return this->Graph;
-}
-
 void graph::fill(std::ifstream &fin) {
     int m;
 
@@ -60,4 +56,8 @@ void graph::fill(std::ifstream &fin) {
 
 int graph::getCountV() const {
     return this->n;
+}
+
+int **graph::getGraph() {
+    return this->Graph;
 }

@@ -2,6 +2,7 @@
 // Created by Iluha on 25.05.2022.
 //
 
+#pragma once
 #ifndef GRAPH_7_QUEUE_H
 #define GRAPH_7_QUEUE_H
 

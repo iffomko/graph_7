@@ -73,6 +73,12 @@ build CMakeFiles/graph_7.dir/queue/queue.cpp.obj: CXX_COMPILER__graph_7_Debug C$
   OBJECT_DIR = CMakeFiles\graph_7.dir
   OBJECT_FILE_DIR = CMakeFiles\graph_7.dir\queue
 
+build CMakeFiles/graph_7.dir/graph/graph.cpp.obj: CXX_COMPILER__graph_7_Debug C$:/Users/Iluha/Documents/github_repos/graph_7/graph/graph.cpp || cmake_object_order_depends_target_graph_7
+  DEP_FILE = CMakeFiles\graph_7.dir\graph\graph.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\graph_7.dir
+  OBJECT_FILE_DIR = CMakeFiles\graph_7.dir\graph
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target graph_7
@@ -81,7 +87,7 @@ build CMakeFiles/graph_7.dir/queue/queue.cpp.obj: CXX_COMPILER__graph_7_Debug C$
 #############################################
 # Link the executable graph_7.exe
 
-build graph_7.exe: CXX_EXECUTABLE_LINKER__graph_7_Debug CMakeFiles/graph_7.dir/main.cpp.obj CMakeFiles/graph_7.dir/queue/queue.cpp.obj
+build graph_7.exe: CXX_EXECUTABLE_LINKER__graph_7_Debug CMakeFiles/graph_7.dir/main.cpp.obj CMakeFiles/graph_7.dir/queue/queue.cpp.obj CMakeFiles/graph_7.dir/graph/graph.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\graph_7.dir

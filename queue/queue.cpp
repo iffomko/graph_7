@@ -18,6 +18,7 @@ queue::queue(int size) {
 
 queue::~queue() {
     delete[] this->data;
+    this->data = nullptr;
 }
 
 bool queue::push(int item) {
